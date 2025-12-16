@@ -21,7 +21,7 @@ A classic Tetris game implementation for Windows Command Prompt written in C wit
 ## How to Build
 
 ```bash
-gcc main.c FramePrinter.c GameControls.c MenuScreen.c -o main.exe -lpthread
+gcc main.c FramePrinter.c GameControls.c -o main.exe -lpthread
 ```
 
 ## How to Run
@@ -45,11 +45,11 @@ Simply execute the compiled binary:
 ```
 cmd-tetris/
 ├── main.c              # Main game loop and initialization
-├── FramePrinter.c      # Display and rendering functions
+├── FramePrinter.c      # Display and rendering functions (includes menu)
 ├── FramePrinter.h      # Display function declarations
 ├── GameControls.c      # Game logic and controls
 ├── GameControls.h      # Game logic declarations
-├── MenuScreen.c        # Menu display
+├── MenuScreen.c        # Standalone ASCII art title screen program
 └── libwinpthread-1.dll # pthread library for Windows
 ```
 
@@ -60,7 +60,7 @@ The game uses multi-threading to handle:
 - User input for movement and rotation
 - Screen refreshing
 
-The game board is represented as a 24x10 grid with mutex locks to prevent race conditions between threads.
+The game board is represented as a 24x10x2 three-dimensional array with mutex locks to prevent race conditions between threads.
 
 ## Author
 
