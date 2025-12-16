@@ -5,8 +5,8 @@ A classic Tetris game implementation for Windows Command Prompt written in C wit
 ## Features
 
 - Classic Tetris gameplay with all standard tetrominos
-- Colorful terminal graphics using ANSI escape codes
-- Smooth gameplay with multi-threaded controls
+- Colorful terminal graphics using ANSI escape codes and Windows APIs
+- Smooth gameplay with multi-threaded architecture
 - Real-time scoring system
 - High score tracking
 - Next piece preview
