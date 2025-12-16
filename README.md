@@ -69,3 +69,6 @@ Created by Isaias
 ## License
 
 This project is open source and available for educational purposes.
+
+---
+This README.md has been generated using AI.
